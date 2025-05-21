@@ -1,0 +1,10 @@
+Ratio,Value,Comment
+"Manufacturing emissions for a mono socket, low DRAM, no local storage commodity rack server (kgCO?eq)",1000,Arbitrary number based on available LCA (Life Cycle Assessment) data
+Commodity rack server lifespan (years),4,This is the lifespan value used in main server LCA found
+Hourly manufacturing emissions conversion factor - linearly ammortised (convert to gCO?eq/hour),0.0289,Computed value to be reused to convert overall manufacturing emissions in kgCO?eq into hourly emissions in gCO?eq
+DRAM Threshold to unlock additional Scope 3 emissions (GB),16,Arbitrary number based on Dell product carbon footprint documents
+Manufacturing emissions for the threshold DRAM amount (kgCO?eq),22,Number based on available LCA data
+Manufacturing emissions per additional CPU (kgCO?eq),100,Number based on available LCA data
+Manufacturing emissions per additionnal HDD (kgCO?eq),50,Number based on available LCA data
+Manufacturing emissions per additionnal SSD (kgCO?eq),100,Number based on available LCA data
+Manufacturing emissions per additionnal GPU Card (kgCO?eq),150,"Arbitrary number, no precise LCA data found for GPU, estimation roughtly based on CPU and DRAM emissions"

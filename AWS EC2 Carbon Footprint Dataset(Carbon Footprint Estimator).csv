@@ -1,0 +1,49 @@
+,,,,,,,
+,,EC2 Instances Carbon Footprint Estimator,,,,,
+,,,,,,,
+,,,,,,,
+,"v0.1: Initial release (September 23, 2021) 
+This Spreadsheet is now deprecated => The effort is now embedded in Boavizta's work",,,,,,
+,,,,,,,
+,Disclaimer: This is a work in progress initiative and data is provided as-is for open contribution purposes and without warranty. ,,,,,,
+,,,,,,,
+,"This spreadsheet provides a way for AWS cloud users to estimate the carbon footprint of their EC2 based workloads. Two estimations are available:
+- Carbon emissions related to running the instance, including the datacenter PUE
+- Carbon emissions related to manufacturing the underlying hardware. Assumptions for this estimation are detailed in the ""Scope 3 Ratios"" tab",,,,,,
+,,,,,,,
+,The methodology is detailed in several blog articles as well as on our Teads Engineering website. You can simply copy this spreadsheet to play with the data. Please comment if you spot an issue.,,,,,,
+,,,,,,,
+,Contact point: Benjamin DAVY,,,,,,
+,,,,,,,
+,Acknowledgements: we would to thank the following entities who enabled this work:,,,,,,
+,Boavizta - Scope 3 Server Data and Methodology Review,,,,,,
+,CloudCarbonFootprint - AWS Regions Mix Intensity Dataset,,,,,,
+,Hardbricks & Workflowers - On premise measurements,,,,,,
+,,,,,,,
+,"Content:
+- EC2 Instances Dataset: The resulting dataset aggregating specifications, power consumption and manufacturing footprint estimation data for each instance type
+- Bare Metal Power Profiles: A recap of our software measurements reported by the turbostress tool on several providers
+- AWS Platforms Ratios: A summary of the CPU platforms used to run EC2 instances as well as their power consumption, some of which are estimated based on comparable configurations
+- Memory Ratios: A summary of the memory power consumption measurements as well as consumption ratios used to estimate the DRAM consumption on machine we cannot measure
+- GPU Specs & Ratios: A list of GPUs available on AWS with their specifications
+- Scope 3 Ratios: A set of assumptions used to calculate the manufacturing carbon footprint
+- AWS Regions Mix Intensity: Dataset courtesy of the Cloud Carbon Footprint initiative
+- Server Carbon Footprint: Dataset of available server carbon footprint, courtesy of the Boavizta initiative
+- Dell R740 LCA: An analysis of the Life Cycle Assessment to extract server embodied emissions at the component level
+- CPU Specs: A collection of CPU specifications that could be later used for further estimations
+- Sources: A list of web resources used to build this estimator",,,,,,
+,,,,,,,
+,"How to use the estimator:
+Select an instance, an AWS region and input a number of compute hours to get a carbon footprint estimation of the workload.",,,,,,
+,,,,,,,
+,Compute Hour(s),5,,,,,
+,,,,,,,
+,AWS Region,Asia Pacific (Sydney),790.0,gCO?eq/kWh,PUE,1.2,
+,,,,,,,
+,Instance Type,c4.large,Idle,10% load,50% load,100% load,
+,Instance Estimated Power Consumption,,#NAME?,#NAME?,#NAME?,#NAME?,Watts
+,,Power Consumption Including Data Center PUE,#NAME?,#NAME?,#NAME?,#NAME?,Watts
+,Carbon Emissions from Running (Scope 2),,#NAME?,#NAME?,#NAME?,#NAME?,gCO?eq
+,Carbon Emissions from Manufacturing (Scope 3),,8.4,,,,gCO?eq
+,,,,,,,
+,,Creative Commons Attribution 4.0 International License,,,,,

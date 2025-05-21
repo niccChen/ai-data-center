@@ -1,0 +1,30 @@
+CPU Name,Platform Total Number of vCPU,Platform Number of CPU Socket(s),Total Number of vCPU per socket,CPU TDP L1 (in Watts),Turbostress Data Available,PkgWatt Idle,PkgWatt CPUStress 10%,PkgWatt CPUStress 50%,PkgWatt Average 100%,RAMWatt per GB @ Idle,RAMWatt per GB @ Low Workload,RAMWatt per GB @ Medium Workload,RAMWatt per GB @ High Workload,Delta Ratio in Watts for full machine estimation,Comment,,Average Consumption per Watt TDP (AWS Platforms only),PkgWatt Idle,PkgWatt CPUStress 10%,PkgWatt CPUStress 50%,PkgWatt Average 100%,Arbitrary Ratio for full machine estimation (CPU TDP %),Total Number of Cores per socket
+Xeon E5-2666 v3,40,2,20,135,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,54.0,Consumption based on Xeon E5-2686 v4,,,#NAME?,#NAME?,#NAME?,#NAME?,20%,10
+Xeon E5-2676 v3,48,2,24,120,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,48.0,Consumption based on Xeon E5-2686 v4,,,,,,,,12
+Xeon E5-2686 v4,72,2,36,145,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,58.0,Memory Consumption isn't properly measured on this CPU generation,,,,,,,,18
+Xeon E5-2650,32,2,16,95,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,38.0,Consumption based on Xeon E5-2686 v4,,,,,,,,8
+Xeon E5-2665,32,2,16,115,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,46.0,Consumption based on Xeon E5-2686 v4,,,,,,,,8
+Xeon E5-2670,32,2,16,115,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,46.0,Consumption based on Xeon E5-2686 v4,,,,,,,,8
+Xeon E5-2651 v2,48,2,24,95,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,38.0,Consumption based on Xeon E5-2686 v4,,,,,,,,12
+Xeon E5-2670 v2,40,2,20,115,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,46.0,Consumption based on Xeon E5-2686 v4,,,,,,,,10
+Xeon E5-2680 v2,40,2,20,115,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,46.0,Consumption based on Xeon E5-2686 v4,,,,,,,,10
+Xeon E7-8880 v3,128,4,32,150,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,120.0,Only 32/36 active vCPU per socket - Consumption based on Xeon E5-2686 v4,,,,,,,,16
+Xeon Platinum 8124M,72,2,36,240,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,96.0,,,,,,,,,18
+Xeon Platinum 8151,48,2,24,240,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,96.0,,,,,,,,,12
+Xeon Platinum 8175M,96,2,48,240,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,96.0,,,,,,,,,24
+Xeon Platinum 8176M,448,8,56,165,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,264.0,Consumption based on 8175M,,,,,,,,28
+Xeon Platinum 8252C,48,2,24,240,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,96.0,,,,,,,,,12
+Xeon Platinum 8259CL,96,2,48,210,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,84.0,,,,,,,,,24
+Xeon Platinum 8275CL,96,2,48,240,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,96.0,,,,,,,,,24
+Xeon Platinum 8375C,128,2,64,300,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,120.0,TDP confirmed by Turbostat - Consumption based on average per W TDP (column R),,,,,,,,32
+Xeon Platinum 8488C,192,2,96,385,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,154.0,TDP confirmed by Turbostat - Consumption based on average per W TDP (column R),,,,,,,,
+EPYC 7571,96,2,48,200,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,80.0,Unofficial TDP - Only 48/64 active vCPU per socket - Consumption based on average per W TDP (column R),,,,,,,,24
+EPYC 7R32,96,1,96,280,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,56.0,Consumption based on average per W TDP (column R),,,,,,,,48
+EPYC 7R13,192,2,96,225,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,90.0,Unofficial TDP - Consumption based on average per W TDP (column R),,,,,,,,
+EPYC 9R14,192,2,96,280,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,112.0,TDP Reported by Turbostat - Consumption based on average per W TDP (column R),,,,,,,,
+Graviton,16,1,16,40,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,8.0,Estimated TDP based on ARM Cosmos Cortex-A72 specifications - Consumption based on average per W TDP (column R),,,,,,,,16
+Graviton2,64,1,64,150,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,30.0,Estimated TDP based on ARM Neoverse N1 specifications - Consumption based on average per W TDP (column R),,,,,,,,64
+Graviton3,64,1,64,220,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,44.0,"TDP estimated based on Neoverse V1 ARM presentation indicating Power-performance trade-off and +50% performance increase from Neoverse N1 architecture used by Graviton 2. *3 sockets per physical servers according to AWS although a metal instance only gives access to one CPU, this should translate in lower manufacturing emissions (one Nitro Card for 3 metal instances)",,,,,,,,64
+Graviton3E,64,1,64,250,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,50.0,3E is supposedly a higher power version of Graviton3,,,,,,,,64
+Core i7-8700B,12,1,12,65,#NAME?,#NAME?,#NAME?,#NAME?,#NAME?,0.200,0.300,0.400,0.600,13.0,Consumption based on average per W TDP (column R),,,,,,,,6
+,,,,,,,,,,,,,,,,,,,,,,,
