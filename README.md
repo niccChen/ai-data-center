@@ -8,11 +8,12 @@ The notebook [`Ai.Data Lab.ipynb`](./Ai.Data%20Lab.ipynb) contains preprocessing
 ---
 
 ## Folder Structure
-├── Ai.Data Lab.ipynb # Jupyter notebook for analysis
+ai-data-center/
+├── Ai.Data Lab.ipynb                # Jupyter notebook for analysis
 └── data/
-├── AWS EC2 Carbon Footprint Dataset(...).csv
-├── Cleaned_.csv
-└── Final_Cleaned_.csv
+    ├── AWS EC2 Carbon Footprint Dataset(AWS Platforms Ratios).csv
+    ├── ...
+    └── Final_Cleaned_EC2_Instances.csv
 
 ---
 
